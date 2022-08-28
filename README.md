@@ -1,9 +1,8 @@
-________________________________________
-________________________________________
+_______________________________________
 Veritabanı genellikle elektronik olarak bir bilgisayar sisteminde depolanan yapılandırılmış(Structured) bilgi veya veriden oluşan düzenli bir koleksiyondur. 
 Veritabanı genellikle bir Veritabanı Yönetim Sistemi DBMS (DataBaseManagementSystem ) ile kontrol edilir. 
 Çoğu veritabanında veri yazma ve sorgulama için yapılandırılmış sorgu dili SQL(Structured Query Language)kullanılır.
-========================================================================================================================================================================
+========================================
 DATABASE’IN FAYDALARI NELERDIR? 
 1)Yuksek miktarda bilgi depolanabilir 
 2)Olusturma, Okuma,Degistirme ve Silme kolayligi 
@@ -27,14 +26,14 @@ END To END (E2E)Testing
   A)Datayi UI dan arama fonksiyonunu kullanarak dogrula(Selenium) 
   B)Datayi SQL kodlarini kullanarak dogrula (SQL +Selenium) 
   C)Datayi API kodlarini kullanarak dogrula (API +Selenium)
-========================================================================================================================================================================
+===============================================
 RELATIONAL DATABASES (ILISKILI TABLOLAR) 
 -SQL tablolar, datalari iliskili tablolarda depolar. 
 -Tablolar arasi iliskiler net olmalidir. 
 -Tablolar arasi gecis kolay olmalidir 
 -Tablolarin ve iliskilerin butunune SCHEMA denir 
 -Relational Databases, SQL Databases (Structured Query Language)olarak da adlandirilir.
-========================================================================================================================================================================
+================================================
 Non Relational Databases(non-SQL Database) 
 SQL veritabanı verilerle ilgilenirken Yapısal Sorgu Dili kullanır. 
 Veri yapısını belirlemek için önceden tanımlanmış şemalar gerektirir. 
@@ -83,7 +82,7 @@ PrimaryKey Primary Key (birincil anahtar),
 SQL Composite Key Composite Key birden fazla field(kolon)’in kombinasyonu ile olusturulur. 
 Tek basina bir kolon Primary Key olma ozelliklerini tasimiyorsa, 
 bu ozellikleri elde etmek icin birden fazla kolon birlestirilerek Primary olusturulur
-
+================================================
 UNIQUE KEY & PRIMARYKEY “UNIQUE KEY” ve “PRIMARY KEY” arasindaki farklar 
 PrimaryKey Bir Tabloda 1 tane olur NULL deger Kabul etmez 
 UniqueKey Bir tabloda birden fazla olabilir NULL degeri Kabul eder “UNIQUE KEY” ve “PRIMARY KEY” ortak ozellikleri Dublication(Cift Kullanim)’a izin vermez
@@ -107,7 +106,7 @@ SQL DataTypes NumericDataTypes
 •BIGINT(boyut) : -9.223.372.036.854.775.808 ile 9.223.372.036.854.775.807 arasında değer alır. 
  “Boyut” ile alabileceği sınırı belirtebiliriz. 
  Hafızada kapladığı alan: 8byte.
-
+================================================
 SQLKomutlari 
 1.Veri Sorgulama Dili (Data Query Language -DQL) 
 mevcut kayıtların bir kısmını veya tamamınını tanımlanan koşullara bağlı olarak alır. 
