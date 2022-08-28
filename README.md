@@ -33,7 +33,7 @@ RELATIONAL DATABASES (ILISKILI TABLOLAR)
 -Tablolar arasi gecis kolay olmalidir 
 -Tablolarin ve iliskilerin butunune SCHEMA denir 
 -Relational Databases, SQL Databases (Structured Query Language)olarak da adlandirilir.
-=====================================================================================
+==========================================================================================
 Non Relational Databases(non-SQL Database) 
 SQL veritabanı verilerle ilgilenirken Yapısal Sorgu Dili kullanır. 
 Veri yapısını belirlemek için önceden tanımlanmış şemalar gerektirir. 
