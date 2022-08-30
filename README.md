@@ -26,14 +26,14 @@ END To END (E2E)Testing
   A)Datayi UI dan arama fonksiyonunu kullanarak dogrula(Selenium) 
   B)Datayi SQL kodlarini kullanarak dogrula (SQL +Selenium) 
   C)Datayi API kodlarini kullanarak dogrula (API +Selenium)
-=====================================================================================
+====================================================================================
 RELATIONAL DATABASES (ILISKILI TABLOLAR) 
 -SQL tablolar, datalari iliskili tablolarda depolar. 
 -Tablolar arasi iliskiler net olmalidir. 
 -Tablolar arasi gecis kolay olmalidir 
 -Tablolarin ve iliskilerin butunune SCHEMA denir 
 -Relational Databases, SQL Databases (Structured Query Language)olarak da adlandirilir.
-=========================================================================================
+====================================================================================
 Non Relational Databases(non-SQL Database) 
 SQL veritabanı verilerle ilgilenirken Yapısal Sorgu Dili kullanır. 
 Veri yapısını belirlemek için önceden tanımlanmış şemalar gerektirir. 
