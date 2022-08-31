@@ -40,7 +40,7 @@ SQL veritabanı verilerle ilgilenirken Yapısal Sorgu Dili kullanır.
 Veri yapısını belirlemek için önceden tanımlanmış şemalar gerektirir. 
 NoSQL veritabanı verilerle çalışırken Yapılandırılmamış Sorgu Dili kullanır.
   
-  *************************** SQLKomutlari **************************
+  ******************************************** SQLKomutlari **********************************************************
   SQL komutları 4 ana gruba ayrılır:=> 
   1.Veri Sorgulama Dili (Data Query Language -DQL) => 
    DQL içindeki SELECT komutu ile veritabanında yer alan mevcut kayıtların bir kısmını veya tamamını tanımlanan koşullara bağlı olarak alır. 
