@@ -33,6 +33,7 @@ RELATIONAL DATABASES (ILISKILI TABLOLAR)
 -Tablolar arasi gecis kolay olmalidir 
 -Tablolarin ve iliskilerin butunune SCHEMA denir 
 -Relational Databases, SQL Databases (Structured Query Language)olarak da adlandirilir.
+
 ====================================================================================
 Non Relational Databases(non-SQL Database) 
 SQL veritabanı verilerle ilgilenirken Yapısal Sorgu Dili kullanır. 
@@ -40,22 +41,22 @@ Veri yapısını belirlemek için önceden tanımlanmış şemalar gerektirir.
 NoSQL veritabanı verilerle çalışırken Yapılandırılmamış Sorgu Dili kullanır.
   
   *************************** SQLKomutlari **************************
-  SQL komutları 4 ana gruba ayrılır:"\n" 
-  1.Veri Sorgulama Dili (Data Query Language -DQL) 
+  SQL komutları 4 ana gruba ayrılır:=> 
+  1.Veri Sorgulama Dili (Data Query Language -DQL) => 
    DQL içindeki SELECT komutu ile veritabanında yer alan mevcut kayıtların bir kısmını veya tamamını tanımlanan koşullara bağlı olarak alır. 
    SELECT : Veritabanındaki verileri alır. 
-  2.Veri Kullanma Dili (Data Manipulation Language -DML).............
+  2.Veri Kullanma Dili (Data Manipulation Language -DML) => 
    DML komutları ile veritabanlarında bulunan verilere işlem yapılır. 
    DML ile veritabanına yeni kayıt ekleme, mevcut kayıtları güncelleme ve silme işlemleri yapılır. 
    INSERT : Veritabanına yeni veri ekler. 
    UPDATE : Veritabanındaki verileri günceller. 
    DELETE : Veritabanındaki verileri siler. 
-  3.Veri Tanimlama Dili (Data Definition Language -DDL).............. 
+  3.Veri Tanimlama Dili (Data Definition Language -DDL) => 
    DDL komutları ile veritabanı ve tabloları oluşturma, değiştirme ve silme işlemleri yapılır: 
     CREATE : Bir veritabanı veya veritabanı içinde tablo oluşturur. 
     ALTER : Bir veritabanı veya veritabanı içindeki tabloyu günceller. 
     DROP : Bir veritabanını veya veritabanı içindeki tabloyu siler. 
-  4.Veri Kontrol Dili (Data Control Language -DCL)................... 
+  4.Veri Kontrol Dili (Data Control Language -DCL) =>  
    DCL komutları ile kullanıcılara veritabanı ve tablolar için yetki verilir veya geri alınır: 
     GRANT : Bir kullanıcıya yetki vermek için kullanılır. 
     REVOKE : Bir kullanıcıya verilen yetkiyi geri almak için kullanılır.
@@ -66,23 +67,23 @@ PrimaryKey Primary Key (birincil anahtar),
  olarak kullanılsa da birden fazla alanın birleşimiyle deoluşturulabilir 
  Primary Key değeri boş geçilemez ve NULL değer alamaz. 
  Relational veritabanlarında(relational database management system) mutlaka birincil anahtar olmalıdır. 
- Not : Bir Tabloda 1 tane primary Key olabilir. 
- Not : Primary Key benzersiz (Unique) olmalidir ama her unique data Primary Key degildir 
- Not : Primary key her turlu datayi icerebilir. Sayi, String.. 
- Not : Her tabloda Primary Key olmasi zorunlu degildir Primary Key, dış dünyadaki gerçek verileri temsil ediyorsa, 
-  orneğin; TC kimlik numarası, bir kitabın ISBN numarası, bir ürünün ismi, email hesabi gibi buna 
+  =>  Not : Bir Tabloda 1 tane primary Key olabilir. 
+  =>  Not : Primary Key benzersiz (Unique) olmalidir ama her unique data Primary Key degildir 
+  =>  Not : Primary key her turlu datayi icerebilir. Sayi, String.. 
+  =>  Not : Her tabloda Primary Key olmasi zorunlu degildir Primary Key, dış dünyadaki gerçek verileri temsil ediyorsa, 
+  =>  orneğin; TC kimlik numarası, bir kitabın ISBN numarası, bir ürünün ismi, email hesabi gibi buna 
   Natural key denir 
   Genel olarak kayıt eklenmeden önce üretilen sira numarasi gibi sayisal degerlere 
   Surrogate Key denir
- Foreign Key Foreign Key iki tablo arasinda relation olusturmak icin kullanilir 
- Foreign Key baska bir tablodaki Primary Key ile iliskilendirilmis olmalidir 
- Bir Tabloda birden fazla Foreign Key olabilir 
- Foreign Key NULL degeri Kabul eder 
- Foreign Key olarak tanimlanan field’da tekrarlar olabilir 
- ForeignKey PrimaryKey Foreign Key, değerleri farklı bir tablodaki Primary Key ile eşleşen bir sütun veya sütunların birleşimidir.
-SQL Composite Key Composite Key birden fazla field(kolon)’in kombinasyonu ile olusturulur. 
-Tek basina bir kolon Primary Key olma ozelliklerini tasimiyorsa, 
-bu ozellikleri elde etmek icin birden fazla kolon birlestirilerek Primary olusturulur
+ =>  Foreign Key Foreign Key iki tablo arasinda relation olusturmak icin kullanilir 
+ => Foreign Key baska bir tablodaki Primary Key ile iliskilendirilmis olmalidir 
+ => Bir Tabloda birden fazla Foreign Key olabilir 
+ => Foreign Key NULL degeri Kabul eder 
+ => Foreign Key olarak tanimlanan field’da tekrarlar olabilir 
+ => ForeignKey PrimaryKey Foreign Key, değerleri farklı bir tablodaki Primary Key ile eşleşen bir sütun veya sütunların birleşimidir.
+ => SQL Composite Key Composite Key birden fazla field(kolon)’in kombinasyonu ile olusturulur. 
+ => Tek basina bir kolon Primary Key olma ozelliklerini tasimiyorsa, bu ozellikleri elde etmek icin birden fazla kolon birlestirilerek Primary olusturulur
+ 
 ==========================================================================================
 UNIQUE KEY & PRIMARYKEY “UNIQUE KEY” ve “PRIMARY KEY” arasindaki farklar 
 PrimaryKey Bir Tabloda 1 tane olur NULL deger Kabul etmez 
@@ -107,6 +108,7 @@ SQL DataTypes NumericDataTypes
 •BIGINT(boyut) : -9.223.372.036.854.775.808 ile 9.223.372.036.854.775.807 arasında değer alır. 
  “Boyut” ile alabileceği sınırı belirtebiliriz. 
  Hafızada kapladığı alan: 8byte.
+ 
 ==========================================================================================
 SQLKomutlari 
 1.Veri Sorgulama Dili (Data Query Language -DQL) 
