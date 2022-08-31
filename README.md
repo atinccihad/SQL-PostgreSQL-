@@ -40,22 +40,22 @@ Veri yapısını belirlemek için önceden tanımlanmış şemalar gerektirir.
 NoSQL veritabanı verilerle çalışırken Yapılandırılmamış Sorgu Dili kullanır.
   
   *************************** SQLKomutlari **************************
-  SQL komutları 4 ana gruba ayrılır: 
+  SQL komutları 4 ana gruba ayrılır:................................. 
   1.Veri Sorgulama Dili (Data Query Language -DQL) 
    DQL içindeki SELECT komutu ile veritabanında yer alan mevcut kayıtların bir kısmını veya tamamını tanımlanan koşullara bağlı olarak alır. 
    SELECT : Veritabanındaki verileri alır. 
-  2.Veri Kullanma Dili (Data Manipulation Language -DML) 
+  2.Veri Kullanma Dili (Data Manipulation Language -DML).............
    DML komutları ile veritabanlarında bulunan verilere işlem yapılır. 
    DML ile veritabanına yeni kayıt ekleme, mevcut kayıtları güncelleme ve silme işlemleri yapılır. 
    INSERT : Veritabanına yeni veri ekler. 
    UPDATE : Veritabanındaki verileri günceller. 
    DELETE : Veritabanındaki verileri siler. 
-  3.Veri Tanimlama Dili (Data Definition Language -DDL) 
+  3.Veri Tanimlama Dili (Data Definition Language -DDL).............. 
    DDL komutları ile veritabanı ve tabloları oluşturma, değiştirme ve silme işlemleri yapılır: 
     CREATE : Bir veritabanı veya veritabanı içinde tablo oluşturur. 
     ALTER : Bir veritabanı veya veritabanı içindeki tabloyu günceller. 
     DROP : Bir veritabanını veya veritabanı içindeki tabloyu siler. 
-  4.Veri Kontrol Dili (Data Control Language -DCL) 
+  4.Veri Kontrol Dili (Data Control Language -DCL)................... 
    DCL komutları ile kullanıcılara veritabanı ve tablolar için yetki verilir veya geri alınır: 
     GRANT : Bir kullanıcıya yetki vermek için kullanılır. 
     REVOKE : Bir kullanıcıya verilen yetkiyi geri almak için kullanılır.
