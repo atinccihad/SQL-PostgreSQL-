@@ -108,3 +108,81 @@ where maas like '_____';
 -- 1.harfi A ve 7.harfi A olan personeli listeleyiniz
 select * from personel
 where isim like 'A_____A%';
+
+-- SELECT - REGEXP_LIKE
+/*
+Daha karmasik pattern ile sorgulama islemi icin REGEXP_LIKE kullanilabilir.
+-- 'c' => case-sensitive demektir
+-- 'i' => incase-sensitive demektir ve default incase-sensitive aktiftir.
+Syntax:
+REGEXP_LIKE(sutun_adi,'pattern[]', 'c')
+*/
+create table kelimeler
+(
+	id int UNIQUE,
+	kelime VARCHAR(50) not NULL,
+	harf_sayisi int
+);
+
+insert into kelimeler values(1001, 'hot', 3);
+insert into kelimeler values(1002, 'hat', 3);
+insert into kelimeler values(1003, 'hit', 3);
+insert into kelimeler values(1004, 'hbt', 3);
+insert into kelimeler values(1005, 'hct', 3);
+insert into kelimeler values(1006, 'adem', 4);
+insert into kelimeler values(1007, 'selim', 5);
+insert into kelimeler values(1008, 'yusuf', 5);
+insert into kelimeler values(1009, 'hip', 3);
+insert into kelimeler values(1010, 'HOT', 3);
+insert into kelimeler values(1011, 'hOt', 3);
+insert into kelimeler values(1012, 'h9t', 3);
+insert into kelimeler values(1013, 'hoot', 4);
+insert into kelimeler values(1014, 'haat', 5);
+insert into kelimeler values(1015, 'haaoooooooot', 5);
+
+drop table kelimeler;
+
+-- icerisinde 'ot' veya 'at' bulunan kelimeleri buyuk kucuk harfe dikkat ederek listeleyiniz
+select * from kelimeler
+where regexp_like(kelime,'at|ot','c');
+
+-- icerisinde 'ot' veya 'at' bulunan  kelimeleri buyuk kucuk harfe dikkat etmeksizin listeleyiniz
+select * from kelimeler
+where regexp_like(kelime,'at|ot');
+
+-- Baslangici gostermek icin ^ karakteri kullanilir
+
+-- 'ho' veya 'hi' ile baslayan kelimeleri buyuk kucuk harfe dikkat etmeksizin listeleyiniz.
+select * from kelimeler
+where regexp_like(kelime,'^ho|^hi');
+
+-- sonu 't' veya 'm' ile bitenleri buyuk kucuk harfe dikkat etmeksizin listeleyiniz
+-- bitisi gostermek icin $ kullanilir
+select * from kelimeler 
+where regexp_like(kelime,'t$|m$');
+
+-- h ile baslayip t ile biten 3 harfli kelimeleri(h ile t kucuk harfli olan) listeleyiniz
+select * from kelimeler 
+where kelime like 'h_t';
+
+select * from kelimeler 
+where regexp_like(kelime,'h[a-zA-Z0-9]t','c');
+
+-- ilk harfi h, son harfi t olup 2.harfi a veya i olan 3 harfli kelimelerin tum bilgilerini sorgulayalim
+select * from kelimeler 
+where kelime like 'h[ai]t';
+
+select * from kelimeler 
+where regexp_like(kelime,'h[ai]t','c');
+
+-- icinde m veya i veya e olan kelimelerin tum bilgilerini listeleyiniz
+select * from kelimeler 
+where REGEXP_LIKE(kelime,'h[mie]t','c');
+
+-- a veya s ile baslayan kelimelerin tum bilgilerini listeleyiniz
+select * from kelimeler 
+where regexp_like(kelime,'^[as]');
+
+-- icerisinde en az 2 adet  oo barindiran kelimelerin tum bilgilerini listeleyiniz
+select * from kelimeler
+where regexp_like(kelime,'[o]{2}');
