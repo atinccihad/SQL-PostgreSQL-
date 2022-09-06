@@ -1,3 +1,5 @@
+-- DELETE
+
 create table ogrenciler(
 id char(3),
 	isim varchar(50),
@@ -53,26 +55,3 @@ savepoint abc;
 select * from ogrenciler;
 
 rollback to abc;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
