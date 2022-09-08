@@ -10,7 +10,7 @@ DATABASE’IN FAYDALARI NELERDIR?
 3)Girisin kolay ve kontrollu olmasi 
 4)Dataya ulasim kolayligi 
 5)Guvenlik
-API Application Programming Interface, bir uygulamaya ait yeteneklerin, başka bir uygulamada da kullanılabilmesi için, 
+API Application Programming Interface, "\n"bir uygulamaya ait yeteneklerin, başka bir uygulamada da kullanılabilmesi için, 
 yeteneklerini paylaşan uygulamanın sağladığı arayüzdür.
 
 END To END (E2E)Testing 
