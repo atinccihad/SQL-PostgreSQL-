@@ -1,4 +1,4 @@
-use sys;
+
 /*============================== JOIN İSLEMLERİ ===============================
     
     Set Operatorleri (Union,Union All, {oracle->Intersect,Minus}) farklı tablolardaki sutunlari 
