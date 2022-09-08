@@ -102,25 +102,3 @@ select * from urunler;
 update urunler
 set musteri_isim= (select irtibat_ismi from tedarikciler where firma_ismi='Apple')
 where urun_isim='Laptop';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
