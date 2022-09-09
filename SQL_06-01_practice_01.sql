@@ -1,61 +1,56 @@
--- sql_practice 1                                                                             
-create table personel                                                                         
-(                                                                                             
-id serial primary key  ,   -- serial id yi auto increment gibi otomatik artirir                                                                  
-isim  varchar(20),                                                                             
-yas int,                                                                                      
-maas int,                                                                                     
-email varchar(30)                                                                             
-);                                                                                            
-                                                                                              
--- auto_increment kullandığımızda otomatik olarak id ler 1 den başlayacaktır.                 
-insert into personel (isim, yas, maas, email) values ('Ali', 39, 12500, 'ali@gmail.com');
-insert into personel (isim, yas, maas, email) values ('Derya', 28, 15000, 'derya@yahoo.com');
-insert into personel (isim, yas, maas, email) values ('Sevim', 24, 25000, 'sevim@hotmail.com');
-insert into personel (isim, yas, maas, email) values ('Yusuf', 32, 18000, 'yusuf@gmail.com');
-insert into personel (isim, yas, maas, email) values ('Halil', 48, 22000, 'halil@gmail.com');
-insert into personel (isim, yas, maas, email) values ('Ece', 54, 21000, 'ece@gmail.com');
-insert into personel (isim, yas, maas, email) values ('Can', 38, 19000, 'can@gmail.com');
-insert into personel (isim, yas, maas, email) values ('Elif', 27, 14000, 'elif@gmail.com');
-insert into personel (isim, yas, maas, email) values ('Ezgi', 38, 21000, 'ezgi@gmail.com');
-insert into personel (isim, yas, maas, email) values ('Sena', 25, 11000, NULL);
--- 1) Tablo bilgilerini listeleyiniz.
-select * from personel;
--- 2) isim, yaş ve maaş bilgilerini listeleyiniz
-select isim, yas ,maas from personel;
--- 3) id'si 8 olan personel bilgilerini listeleyiniz
-select * from personel where id=8;
--- 4) id'si 5 olan personelin isim, yaş ve email bilgilerini listeleyiniz
-select isim,id, yas , email from personel where id =5;
--- 5) 30 yaşından büyük personel bilgilerini listeleyiniz.
-select * from personel where yas>30;
--- 6) maası 21000 olmayan personel bilgilerini listeleyiniz.
-select * from personel where maas <>21000;
--- 7) ismi a harfi ile başlayan personel bilgilerini listeleyiniz.
-select * from personel where isim ilike 'A%' ; -- % isareti ne ile devam ederse etsin
--- 8) ismi n harfi ile biten personel bilgilerini listeleyiniz.
-select * from personel where isim ilike '%N';
--- 9) email adresi gmail olan personel bilgilerini listeleyiniz.
-select * from personel where email like '%@gmail.com';
--- 10) email adresi gmail olmayan personel bilgilerini listeleyiniz.
-select * from personel where email not like '%@gmail.com'; -- % ile arama yaptigimiz icin null gelmez
--- 11) id'si 3,5,7 ve 9 olan personel bilgilerini listeleyiniz.
-select * from personel where id in(3,5,7,9);
--- 12) yaşı 39,48 ve 54 olmayan personel bilgilerini listeleyiniz.
-select * from personel where yas not in (39,48,54);
--- 13) yaşı 30 ve 40 arasında olan personel bilgilerini listeleyiniz.
-select * from personel where yas between 30 and 40;
--- 14) yaşı 30 ve 40 arasında olmyan personel bilgilerini listeleyiniz.
-select * from personel where yas not between 30 and 40;
--- 15) emaili null olan personel bilgilerini listeleyi
-select * from personel where email is NULL;
--- 16) personel bilgilerini yaşa göre sıralayınız.
-select * from personel order by yas ;-- dogal sirlamasi kucukten buyuge  asc
--- 17) personel bilgilerini maaşa göre sıralayınız.
-select * from personel order by maas;
--- 18) personelin yaşlarını büyükten küçüğe doğru sıralayınız.
-select * from personel order by yas desc;
--- 19) personelin maaşlarını büyükten küçüğe doğru sıralayınız.
-select * from personel order by maas desc;
--- 20) En yüksek maaş olan ilk 3 personel bilgilerini sıralayınız
-select * from personel order by maas desc limit 3;
+CREATE TABLE calisanlar
+(
+id int,
+isim VARCHAR(50),
+sehir VARCHAR(50),
+maas int,
+isyeri VARCHAR(20)
+);
+INSERT INTO calisanlar VALUES(123456789, 'Ali Seker', 'Istanbul', 2500, 'Vakko');
+INSERT INTO calisanlar VALUES(234567890, 'Ayse Gul', 'Istanbul', 1500, 'LCWaikiki');
+INSERT INTO calisanlar VALUES(345678901, 'Veli Yilmaz', 'Ankara', 3000, 'Vakko');
+INSERT INTO calisanlar VALUES(456789012, 'Veli Yilmaz', 'Izmir', 1000, 'Pierre Cardin');
+INSERT INTO calisanlar VALUES(567890123, 'Veli Yilmaz', 'Ankara', 7000, 'Adidas');
+INSERT INTO calisanlar VALUES(456789012, 'Ayse Gul', 'Ankara', 1500, 'Pierre Cardin');
+INSERT INTO calisanlar VALUES(123456710, 'Fatma Yasa', 'Bursa', 2500, 'Vakko');
+CREATE TABLE markalar
+(
+marka_id int,
+marka_isim VARCHAR(20),
+calisan_sayisi int
+);
+INSERT INTO markalar VALUES(100, 'Vakko', 12000);
+INSERT INTO markalar VALUES(101, 'Pierre Cardin', 18000);
+INSERT INTO markalar VALUES(102, 'Adidas', 10000);
+INSERT INTO markalar VALUES(103, 'LCWaikiki', 21000);
+select * from calisanlar;
+select * from markalar;
+select * from calisanlar,markalar where calisanlar.isyeri=markalar.marka_isim
+-- SORU1: calisan sayisi 15.000’den cok olan markalarin isimlerini ve bu
+-- markada calisanlarin isimlerini ve maaşlarini listeleyin.
+select isim,maas,isyeri from calisanlar
+where isyeri in(select marka_isim from markalar where calisan_sayisi>15000); --in baglanti noktasi
+-- in kulanacaksaniz parantez icine aldiginiz sorgu birden fazla deger dondermelidir
+-- SORU2: marka_id’si 101’den büyük olan marka çalişanlarinin isim, maaş ve
+--şehirlerini listeleyiniz.
+select isim,maas,sehir from calisanlar 
+where isyeri in(select marka_isim from markalar where marka_id>101 )
+-- SORU3: Ankara’da calisani olan markalarin marka id'lerini ve calisan sayilarini listeleyiniz.
+select marka_id,calisan_sayisi from markalar 
+where marka_isim in(select isyeri from calisanlar where sehir='Ankara')
+  
+      
+-- SORU4: Her markanin ismini, calisan sayisini ve o markaya ait calisanlarin toplam maaşini listeleyen bir Sorgu yaziniz.
+select marka_isim,calisan_sayisi,(select sum(maas) as toplam_maas from calisanlar  where marka_isim=isyeri) from markalar
+--aggregate method olunca in'e gerek kalmiyor ama ayni veriye sahip sutunlari esitlemek gerekir ==> where marka_isim=isyeri
+ 
+-- SORU5: Her markanin ismini, calisan sayisini ve o markaya ait calisanlarin ortalama maaşini listeleyen bir Sorgu yaziniz.
+select marka_isim,calisan_sayisi,(select round(avg(maas)) as ortalama_maas from calisanlar where marka_isim=isyeri)
+from markalar
+-- SORU6: Her markanin ismini, calisan sayisini ve o markaya ait calisanlarin maksimum ve minumum maaşini listeleyen bir Sorgu yaziniz.
+select marka_isim,calisan_sayisi,(select max(maas) as max_maas from calisanlar where marka_isim=isyeri),
+(select min(maas) as min_maas from calisanlar where marka_isim=isyeri)
+from markalar
+-- SORU7: Her markanin id’sini, ismini ve toplam kaç şehirde bulunduğunu listeleyen bir SORGU yaziniz.
+select marka_id,marka_isim,(select count(sehir) as toplam_bulundugu_sehir from calisanlar where marka_isim=isyeri)
+from markalar
