@@ -1,3 +1,4 @@
+<h3><img src="https://dataera.com.tr/wp-content/uploads/2018/07/postgresql-logo-1-820x450.jpg"/></h3>
 _______________________________________
 Veritabanı genellikle elektronik olarak bir bilgisayar sisteminde depolanan yapılandırılmış(Structured) bilgi veya veriden oluşan düzenli bir koleksiyondur. 
 Veritabanı genellikle bir Veritabanı Yönetim Sistemi DBMS (DataBaseManagementSystem ) ile kontrol edilir. 
