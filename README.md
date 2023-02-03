@@ -104,7 +104,7 @@ SQL DataTypes NumericDataTypes<br>
  Hafızada kapladığı alan: 8byte.<br> 
 <h3>SQLKomutlari</h3> 
 <h5>1.Veri Sorgulama Dili (Data Query Language -DQL)</h5> 
-mevcut kayıtların bir kısmını veya tamamınını tanımlanan koşullara bağlı olarak alır.<br>  
+Mevcut kayıtların bir kısmını veya tamamınını tanımlanan koşullara bağlı olarak alır.<br>  
  SELECT : Veritabanındaki verileri alır.<br>  
 <h5>2.Veri Degistirme Dili (Data ManipulationLanguage -DML)</h5> 
  Veritabanına yeni kayıt ekleme(INSERT),mevcut kayıtları güncelleme(UPDATE) ve silme(DELETE) işlemleri yapılır.<br>  
