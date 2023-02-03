@@ -12,9 +12,8 @@ _______________________________________
 3) Girisin kolay ve kontrollu olmasi <br>
 4) Dataya ulasim kolayligi <br>
 5) Guvenlik<br>
-API(Application Programming Interface),<br> bir uygulamaya ait yeteneklerin, başka bir uygulamada da kullanılabilmesi için, 
-yeteneklerini paylaşan uygulamanın sağladığı arayüzdür.
-
+<h3>API(Application Programming Interface)</h3> 
+Bir uygulamaya ait yeteneklerin, başka bir uygulamada da kullanılabilmesi için, yeteneklerini paylaşan uygulamanın sağladığı arayüzdür.<br>
 <h3>END To END(E2E) Testing</h3> 
 1) Eger datayi User Interface (UI) kullanarak yolladiysaniz<br> 
   A) Datayi UI dan arama fonksiyonunu kullanarak dogrula(Selenium)<br>
@@ -70,9 +69,9 @@ NoSQL veritabanı verilerle çalışırken Yapılandırılmamış Sorgu Dili kul
   =>  Not : Primary Key benzersiz (Unique) olmalidir ama her unique data Primary Key degildir<br>  
   =>  Not : Primary key her turlu datayi icerebilir. Sayi, String..<br>  
   =>  Not : Her tabloda Primary Key olmasi zorunlu degildir Primary Key, dış dünyadaki gerçek verileri temsil ediyorsa,<br>  
-  =>  orneğin; TC kimlik numarası, bir kitabın ISBN numarası, bir ürünün ismi, email hesabi gibi buna, "Natural key" denir.<br>  
+  =>  Orneğin; TC kimlik numarası, bir kitabın ISBN numarası, bir ürünün ismi, email hesabi gibi buna, "Natural key" denir.<br>  
   Genel olarak kayıt eklenmeden önce üretilen sira numarasi gibi sayisal degerlere  "Surrogate Key" denir.<br> 
- =>  Foreign Key Foreign Key iki tablo arasinda relation olusturmak icin kullanilir<br>  
+ => Foreign Key Foreign Key iki tablo arasinda relation olusturmak icin kullanilir<br>  
  => Foreign Key baska bir tablodaki Primary Key ile iliskilendirilmis olmalidir<br>  
  => Bir Tabloda birden fazla Foreign Key olabilir<br>  
  => Foreign Key NULL degeri Kabul eder<br>  
@@ -108,16 +107,16 @@ SQL DataTypes NumericDataTypes<br>
 mevcut kayıtların bir kısmını veya tamamınını tanımlanan koşullara bağlı olarak alır.<br>  
  SELECT : Veritabanındaki verileri alır.<br>  
 <h5>2.Veri Degistirme Dili (Data ManipulationLanguage -DML)</h5> 
- veritabanına yeni kayıt ekleme,mevcut kayıtları güncelleme ve silme işlemleri yapılır.<br>  
+ Veritabanına yeni kayıt ekleme(INSERT),mevcut kayıtları güncelleme(UPDATE) ve silme(DELETE) işlemleri yapılır.<br>  
   INSERT : Veritabanına yeni veri ekler.<br>  
   UPDATE : Veritabanındaki verileri günceller.<br>  
   DELETE : Veritabanındaki verileri siler.<br> 
 <h5>3.Veri TanimlamaDili (Data Definition Language -DDL)</h5>
- veritabanı ve tabloları oluşturma,değiştirme ve silme işlemleri yapılır<br>  
+ Veritabanı ve tabloları oluşturma(CREATE),değiştirme(ALTER) ve silme(DROP) işlemleri yapılır<br>  
   CREATE : Bir veritabanı veya tablo oluşturur.<br>  
   ALTER : Bir veritabanı veya tabloyu günceller.<br>  
   DROP : Bir veritabanını veya tabloyu siler.<br>  
 <h5>4.Veri Kontrol Dili (Data Control Language -DCL)</h5>
- veritabanı ve tablolar için yetki verilir veya geri alınır<br>  
+ Veritabanı ve tablolar için yetki verilir(GRANT) veya geri alınır(REVOKE)<br>  
   GRANT : Bir kullanıcıya yetki vermek için kullanılır.<br>  
   REVOKE : Bir kullanıcıya verilen yetkiyi geri almak için kullanılır.<br> 
