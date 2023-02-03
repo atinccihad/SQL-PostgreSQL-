@@ -70,8 +70,7 @@ NoSQL veritabanı verilerle çalışırken Yapılandırılmamış Sorgu Dili kul
   =>  Not : Primary Key benzersiz (Unique) olmalidir ama her unique data Primary Key degildir<br>  
   =>  Not : Primary key her turlu datayi icerebilir. Sayi, String..<br>  
   =>  Not : Her tabloda Primary Key olmasi zorunlu degildir Primary Key, dış dünyadaki gerçek verileri temsil ediyorsa,<br>  
-  =>  orneğin; TC kimlik numarası, bir kitabın ISBN numarası, bir ürünün ismi, email hesabi gibi buna<br>  
-  Natural key denir.<br>  
+  =>  orneğin; TC kimlik numarası, bir kitabın ISBN numarası, bir ürünün ismi, email hesabi gibi buna, "Natural key" denir.<br>  
   Genel olarak kayıt eklenmeden önce üretilen sira numarasi gibi sayisal degerlere  "Surrogate Key" denir.<br> 
  =>  Foreign Key Foreign Key iki tablo arasinda relation olusturmak icin kullanilir<br>  
  => Foreign Key baska bir tablodaki Primary Key ile iliskilendirilmis olmalidir<br>  
@@ -122,5 +121,3 @@ mevcut kayıtların bir kısmını veya tamamınını tanımlanan koşullara ba�
  veritabanı ve tablolar için yetki verilir veya geri alınır<br>  
   GRANT : Bir kullanıcıya yetki vermek için kullanılır.<br>  
   REVOKE : Bir kullanıcıya verilen yetkiyi geri almak için kullanılır.<br> 
-
-
