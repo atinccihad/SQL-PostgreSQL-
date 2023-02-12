@@ -15,18 +15,18 @@ _______________________________________
 <h3>API(Application Programming Interface)</h3> 
 Bir uygulamaya ait yeteneklerin, başka bir uygulamada da kullanılabilmesi için, yeteneklerini paylaşan uygulamanın sağladığı arayüzdür.<br>
 <h3>END To END(E2E) Testing</h3> 
-1) Eger datayi User Interface (UI) kullanarak yolladiysaniz<br> 
+<p>1) Eger datayi User Interface (UI) kullanarak yolladiysaniz<br> 
   A) Datayi UI dan arama fonksiyonunu kullanarak dogrula(Selenium)<br>
   B) Datayi SQL kodlarini kullanarak dogrula (SQL +Selenium)<br>
-  C) Datayi API kodlarini kullanarak dogrula (API +Selenium)<br>
-2) Eger datayi SQL kodlarini kullanarak yolladiysaniz<br> 
+  C) Datayi API kodlarini kullanarak dogrula (API +Selenium)<br></p>
+<p>2) Eger datayi SQL kodlarini kullanarak yolladiysaniz<br> 
   A) Datayi UI dan arama fonksiyonunu kullanarak dogrula(Selenium)<br> 
   B) Datayi SQL kodlarini kullanarak dogrula (SQL +Selenium)<br> 
-  C) Datayi API kodlarini kullanarak dogrula (API +Selenium)<br> 
-3) Eger datayi API kodlarini kullanarak yolladiysaniz<br>
+  C) Datayi API kodlarini kullanarak dogrula (API +Selenium)<br></p> 
+<p>3) Eger datayi API kodlarini kullanarak yolladiysaniz<br>
   A) Datayi UI dan arama fonksiyonunu kullanarak dogrula(Selenium)<br> 
   B) Datayi SQL kodlarini kullanarak dogrula (SQL +Selenium)<br> 
-  C) Datayi API kodlarini kullanarak dogrula (API +Selenium)<br>
+  C) Datayi API kodlarini kullanarak dogrula (API +Selenium)<br></p>
 <h3>RELATIONAL DATABASES (ILISKILI TABLOLAR)</h3> 
 - SQL tablolar, datalari iliskili tablolarda depolar.<br> 
 - Tablolar arasi iliskiler net olmalidir.<br> 
